@@ -1,1 +1,4 @@
-<p>second-component works!</p>
+
+<h1>input and output demo</h1>
+<h3>Parent Id: {{parentid()}}</h3>
+<app-input-demo (idUpdateEvent)="updateId($event)" [id]="parentid()"/>

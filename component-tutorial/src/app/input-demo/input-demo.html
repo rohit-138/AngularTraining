@@ -1,0 +1,11 @@
+<h4>Id : {{id()}}</h4>
+<label for="">update id</label>
+<div class="row mt-5">
+    <div class="col-2">
+        <input class="form-control" [(ngModel)]="newId" type="text" placeholder="Enter new Id">
+    </div>
+    
+    <div class="col">
+        <button (click)="updateIdInParent()"  class="btn btn-primary mx-auto">update Id</button>
+    </div>
+</div>
