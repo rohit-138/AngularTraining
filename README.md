@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](git.png)
 
 To begin with, it’s essential to identify where our code is stored. The common assumption is that there are only two locations - one on a remote server like Github and the other on our local machine. However, this isn’t entirely accurate. Git maintains three local storages on our machine, which means that our code can be found in four places:
 
