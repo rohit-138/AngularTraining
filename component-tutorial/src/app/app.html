@@ -1,10 +1,24 @@
 <h1>Angular Router App</h1>
-<nav>
-  <ul>
-    <li><a routerLink="/first-component" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a></li>
-    <li><a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a></li>
-    <button type="button" class="btn btn-primary">First button</button>
-  </ul>
-</nav>
+<div class="container">
+  <div class="row align-items-center">
+
+    <div class="col">
+      <a class="btn btn-primary" routerLink="/first-component" routerLinkActive="btn-success" ariaCurrentWhenActive="page">two way binding</a>
+    </div>
+    <div class="col">
+      <a class="btn btn-primary" routerLink="/second-component" routerLinkActive="btn-success" ariaCurrentWhenActive="page">Second Component</a>
+    </div>
+    <div class="col">
+      <a class="btn btn-primary" routerLink="/interpolation" routerLinkActive="btn-success" ariaCurrentWhenActive="page">Interpolation Demo</a>
+    </div>
+    <div class="col">
+      <a class="btn btn-primary" routerLink="/event-binding" routerLinkActive="btn-success" ariaCurrentWhenActive="page">Event binding</a>
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <router-outlet />
+
+  </div>
+    
+</div>
 <!-- The routed views render in the <router-outlet>-->
-<router-outlet />

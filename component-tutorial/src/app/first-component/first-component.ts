@@ -8,5 +8,5 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './first-component.css'
 })
 export class FirstComponent {
-  count:number=456;
+  count?:number;
 }

@@ -1,0 +1,23 @@
+<p>interpolation-demo works!</p>
+<div class="container">
+    <div class="col">
+
+        <div class="form-check">
+            <input class="form-check-input" [(ngModel)]="isDisabledBtn" [value]="true" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                set isDisabledBtn True
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" [(ngModel)]="isDisabledBtn" [value]="false" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                set isDisabledBtn False </label>
+        </div>
+        <button class="row mb-5 btn btn-primary" type="button" [disabled]="isDisabledBtn">Intepolation demo btn</button>
+
+        <input class="row mb-5" (keyup)="onChange()" type="text" placeholder="your value appears here" [value]="name">
+
+
+        <input class="row" type="text" placeholder="type here" [(ngModel)]="name">
+    </div>
+</div>
